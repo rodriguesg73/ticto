@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --paid-in-green: ##06D7A5;
+    --card-total-amount: #06D7A5;
+    --table-row-label: #4C5A5A;
+    --card-in-out-label: #4E5555;
+    --card-in-out-title: #484F55;
+    --gray-50: #B7BFC0;
+    --table-title-gray: #B9B9B9;
+    --gray-bg: #F1F5F8;
+    --white: #FFFFFF;
+    --button-purple: #401A9B;
+    --header-bg: #30107D;
+    --transaction-deletion-red: #E23161;
+    --paid-out-red: #DB3766;
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray-bg);
+  opacity: 1;
+}
+
+body, input, textarea, button {
+  font: 500 1rem, sans-serif;
+  color: var(--gray-500);
+}
+
+
