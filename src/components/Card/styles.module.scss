@@ -1,4 +1,60 @@
-.cardContainer {
+.cardList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cardItem {
+  width: 388px;
+  height: 175px;
   background: var(--white);
+  padding: 0 auto;
+  margin: 0 15px;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  display: flex;
   color: var(--card-in-out-title);
+  font-family: 'Roboto';
+  font-size: 24px;
+  margin-top: 22px;
+  margin-left: 15px;
+  justify-content: space-between;
+}
+
+.cardPaidInIcon {
+  color: var(--paid-in-green);
+  margin-right: 10px;
+}
+
+.cardPaidOutIcon {
+  color: var(--paid-out-red);
+  margin-right: 10px;
+}
+
+.cardBalanceIcon {
+  color: var(--white);
+  margin-right: 10px;
+}
+
+#balanceCard {
+    color: var(--white);
+    background: var(--card-total-amount);
+    .cardTitle {
+      color: var(--white);
+    }
+    .cardContent {
+      color: var(--white);
+    }
+}
+
+.cardContent {
+  font-family: 'Poppins';
+  font-size: 42px;
+  color: var(--card-in-out-label);
+  margin-top: 35px;
+  margin-left: 35px;
+  align-items: center;
 }

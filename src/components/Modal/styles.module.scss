@@ -1,0 +1,53 @@
+.formGroupTransactionInput {
+  display: block;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.inputForm {
+  background: #F7F7F7;
+  margin-top: 10px;
+}
+
+.buttonTransactionType {
+  width: 230px;
+  border: 1px solid #D9D9D9;
+  align-items: center;
+  background: var(--white);
+  color: var(--card-in-out-label);
+  
+  .iconTransactionIn {
+    color: var(--paid-in-green);
+    margin-right: 20px;
+  }
+  .iconTransactionOut {
+    color: var(--paid-out-red);
+    margin-right: 20px;
+  }
+}
+
+.formGroupTransactionButton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.selectTransactionCatagory {
+  background: #F7F7F7;
+  margin-top: 10px;
+}
+
+.buttonSaveTransaction {
+  width: 100%;
+  background: #401A9B;
+  border: none;
+  color: var(--white);
+  &:hover {
+    background: #401A9B;
+    opacity: 0.8;
+  }
+  &:active{
+    background: #401A9B;
+    opacity: 0.8;
+  }
+}
