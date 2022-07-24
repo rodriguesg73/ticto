@@ -1,0 +1,32 @@
+{ 
+  "transactions": [
+      {
+      "description": "Curso de NextJS",
+      "type": false,
+      "value": 899,
+      "category": "Educação",
+      "date": "2021-01-22 16:35:40"
+    },
+    {
+      "description": "Salário",
+      "type": true,
+      "value": 7350,
+      "category": "Receita Fixa",
+      "date": "2021-01-22 16:35:40"
+    },
+    {
+      "description": "Curso de NextJS",
+      "type": false,
+      "value": 899,
+      "category": "Educação",
+      "date": "2021-01-22 16:35:40"
+    },
+    {
+      "description": "Curso de NextJS",
+      "type": false,
+      "value": 899,
+      "category": "Educação",
+      "date": "2021-01-22 16:35:40"
+    }  
+  ]
+}

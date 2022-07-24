@@ -3,19 +3,20 @@ import styles from './styles.module.scss';
 import { useTable } from 'react-table'
 import Table from 'react-bootstrap/Table'
 import { columns, data, } from '../../data';
+import { Trash, Trash2 } from 'react-feather';
 
 export function Datatable() {
   const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = useTable({columns, data})
   return(
     <div className={styles.tableContainer}>
-      <Table striped  {...getTableProps()}>
+      <Table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <tr {...headerGroup.getHeaderGroupProps()} className={styles.tableHeader}>
               {headerGroup
                 .headers
                 .map(column => (
-                  <th {...column.getHeaderProps()} className={styles.tableHeader}>{column.render('Header')}</th>
+                  <th {...column.getHeaderProps()}>{column.render('Header')}</th>
                 ))}
             </tr>
           ))}
@@ -30,6 +31,7 @@ export function Datatable() {
                   .map(cell => {
                     return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                   })}
+                  <td><Trash2 className={styles.iconTransactionDelete}/></td>
               </tr>
             )
           })}

@@ -2,8 +2,27 @@
   display: flex;
   justify-content: center;
   margin-top: 45px;
+  padding: 15px;
 }
 
 .tableHeader {
-  color: var(--table-tittle-gray)
+  th {
+    color: var(--table-tittle-gray);
+    border-radius: 8px;  
+  }
+}
+
+.tableRow {
+  td {
+  background: var(--white);
+  color: var(--table-tittle-gray);
+}
+border-radius: 8px;
+}
+
+.iconTransactionDelete {
+  color: var(--paid-out-red);
+  &:hover {
+    opacity: 0.5;
+  }
 }

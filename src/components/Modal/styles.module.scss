@@ -1,3 +1,7 @@
+.modalContainer{
+  margin-top: 60px;
+}
+
 .formGroupTransactionInput {
   display: block;
   justify-content: center;
@@ -38,6 +42,7 @@
 }
 
 .buttonSaveTransaction {
+  margin-top: 35px;
   width: 100%;
   background: #401A9B;
   border: none;
